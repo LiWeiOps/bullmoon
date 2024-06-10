@@ -1,0 +1,26 @@
+name: "bullmoon"
+model: "dev"
+port: 8081
+start_time: "2023-12-16"
+machine_id: 1
+log:
+  filename: "app.log"
+  level: "debug"
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+mysql:
+  host: "192.168.195.132"
+  port: 3307
+  user: "root"
+  password: "123456"
+  dbname: "bullmoon"
+  max_open_conns: 20
+  max_idle_conns: 10
+
+redis:
+  host: "192.168.195.132"
+  port: 6379
+  password: ""
+  db: 0
+  pool_size: 100
